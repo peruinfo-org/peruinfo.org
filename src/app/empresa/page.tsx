@@ -12,10 +12,9 @@ export default async function Page() {
           <img src="/illustrations/search.svg" alt="Empresas" />
         </div>
         <div className="flex flex-col gap-8">
-          <h2 className="text-2xl font-bold pb-2">API</h2>
+          <h2 className="text-2xl font-bold pb-2">Encuentra</h2>
           <p>
-            En esta página puedes encontrar información de las empresas registradas en la SUNAT, 
-            puedes buscar por RUC, nombre o razón social.
+            Encuentra información de empresas registradas en la SUNAT. Puedes buscar por RUC, nombre o razón social.
           </p>
           <div>
             <Search url="/empresa" />

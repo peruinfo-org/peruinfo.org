@@ -23,7 +23,7 @@ export default function Search ({
       onChange={e => setQuery(e.target.value)}
     />
     <button 
-      className="absolute right-0 top-0 flex h-full w-[65px] items-center justify-center text-dark dark:text-white"
+      className="absolute right-0 top-0 flex h-full w-[75px] items-center justify-center text-dark dark:text-white"
       onClick={(e) => {
         e.preventDefault()
         router.push(`${url}/${slugify(query)}`)
