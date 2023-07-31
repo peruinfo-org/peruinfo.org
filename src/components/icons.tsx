@@ -141,3 +141,20 @@ export const WebsiteIcon = () => {
     />
   </svg>;
 }
+
+
+export const SearchIcon = () => {
+
+  return <svg
+    className="w-6 h-6"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M8 3a5 5 0 100 10 5 5 0 000-10zM0 10a10 10 0 1120 0 10 10 0 01-20 0z"
+      clip-rule="evenodd"
+    />
+  </svg>;
+}

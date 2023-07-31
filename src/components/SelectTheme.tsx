@@ -39,7 +39,6 @@ const items = [
     }
   }, [mode])
 
-  console.log(mode)
 
   return (
     <div className="relative inline-block text-left">
