@@ -6,7 +6,7 @@ import SelectTheme from "./SelectTheme"
 export default function Header () {
   
   return (
-    <header className="bg-transparent sticky top-0 bg-red-900 dark:bg-gray-950">
+    <header className="sticky top-0 bg-red-900 dark:bg-gray-950 text-white">
       <div className="container mx-auto flex items-center py-4 gap-4">
         <div>
           <Link href="/">

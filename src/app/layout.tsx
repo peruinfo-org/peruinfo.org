@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-
+import { ColorModeContextProvider } from '@/context/ThemeMode'
 
 export const metadata: Metadata = {
   title: 'peruinfo',
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  return (
+  return 
     <html lang="es">
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
@@ -28,5 +28,4 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  )
 }
