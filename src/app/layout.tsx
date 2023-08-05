@@ -5,8 +5,6 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { cookies } from 'next/headers'
-import { ThemeModeContext } from '@/context/ThemeMode'
-import Cookies from 'js-cookie'
 
 
 const inter = Inter({ subsets: ['latin'] })
