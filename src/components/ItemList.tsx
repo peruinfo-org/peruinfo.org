@@ -18,7 +18,7 @@ export default function ItemList ({
           {icon ? icon : <CheckIcon />}
         </span>
         <h2 className="mt-4 text-lg font-bold text-gray-800 dark:text-white">{name}</h2>
-        <p className="mt-2 text-red-600 dark:text-red-400 ">{value}</p>
+        <p className="mt-2 text-xs text-slate-800 ">{value}</p>
     </div>
   }
   return <div className="flex items-center gap-2  text-gray-800 -px-3 dark:text-gray-200">

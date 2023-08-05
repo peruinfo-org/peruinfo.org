@@ -2,11 +2,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { ColorModeContextProvider } from '@/context/ThemeMode'
+import { cookies } from 'next/headers'
+import { ThemeModeContext } from '@/context/ThemeMode'
+import Cookies from 'js-cookie'
 
+
+const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'peruinfo',
   description: 'Peru Info un centro de datos e información sobre el Perú',
@@ -18,12 +21,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  return 
-    <html lang="es">
+  const cookieStore = cookies()
+  const mode = cookieStore.get('_m')?.value
+
+  return  <html lang="es" className={mode}>
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow">{children}</main> 
+          <main className="flex-grow py-8">{children}</main> 
           <Footer />
         </div>
       </body>

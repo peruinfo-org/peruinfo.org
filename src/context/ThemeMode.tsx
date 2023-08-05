@@ -13,14 +13,14 @@ type ColorModeContextType = {
   setMode: (mode: string) => void;
 };
 
-export const ColorModeContext = createContext<ColorModeContextType>(
+export const ThemeModeContext = createContext<ColorModeContextType>(
   {} as ColorModeContextType
 );
 
 
 export const COOKIE_MODE = "_m";
 
-export const ColorModeContextProvider: React.FC<PropsWithChildren> = ({
+export const ThemeModeContextProvider: React.FC<PropsWithChildren> = ({
   children,
 }) => {
   
@@ -50,13 +50,13 @@ export const ColorModeContextProvider: React.FC<PropsWithChildren> = ({
 
 
   return (
-    <ColorModeContext.Provider
+    <ThemeModeContext.Provider
       value={{
         setMode: setColorMode,
         mode,
       }}
     >
       {children}
-    </ColorModeContext.Provider>
+    </ThemeModeContext.Provider>
   );
 };

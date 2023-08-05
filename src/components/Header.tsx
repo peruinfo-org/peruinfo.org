@@ -13,13 +13,16 @@ export default function Header () {
             <span className="text-5xl uppercase font-bold text-red-600">P</span>
             <span className="text-5xl uppercase font-bold text-white">er</span>
             <span className="text-5xl uppercase font-bold text-red-600">ú</span>
-            <span className="text-2xl uppercase font-medium">Info.org</span>
+            <span className="text-2xl uppercase font-medium text-slate-300">Info.org</span>
           </Link>
         </div>
         <div className="flex-grow"></div>
         <div className="flex gap-4 items-center">
-          <Search />
-          <SelectTheme />
+          <Search 
+            url="/empresa" 
+          />
+          {//<SelectTheme />
+          }
         </div>
       </div>
     </header>  
