@@ -28,7 +28,6 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.39.3",
     "@types/js-cookie": "^3.0.3"
   }
 }
