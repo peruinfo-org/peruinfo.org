@@ -5,10 +5,10 @@ export async function GET(request: Request, context: { params: { slug: string } 
   
   const slug = context.params.slug.split('.xml')[0]
   const page = parseInt(slug.split('-')[2])
-
+  const limit = 5000
   const padron = await getPadron({
-    limit: 10000,
-    offset: (page - 1) * 10000,
+    limit,
+    offset: (page - 1) * limit
   });
 
 

@@ -9,7 +9,7 @@ export async function GET(request: Request) {
     offset: 0,
   });
 
-  const paginate = Math.ceil(padron.count / 10000);
+  const paginate = Math.ceil(padron.count / 5000);
   
   const paginateList = Array.from({ length: paginate }, (_, i) => i + 1)
 
