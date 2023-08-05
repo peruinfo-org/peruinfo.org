@@ -4,12 +4,14 @@ import { getPadron } from "@/utils/sunat";
 
 export async function GET(request: Request) {
 
-  const padron = await getPadron({
-    limit: 1,
-    offset: 0,
-  });
+  //const padron = await getPadron({
+  //  limit: 1,
+  //  offset: 0,
+  //});
 
-  const paginate = Math.ceil(padron.count / 5000);
+  const count = 500000
+
+  const paginate = Math.ceil(count / 5000);
   
   const paginateList = Array.from({ length: paginate }, (_, i) => i + 1)
 
