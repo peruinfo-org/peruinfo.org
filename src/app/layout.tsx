@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { cookies } from 'next/headers'
+//import { cookies } from 'next/headers'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,10 +19,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const cookieStore = cookies()
-  const mode = cookieStore.get('_m')?.value
+  //const cookieStore = cookies()
+  //const mode = cookieStore.get('_m')?.value
 
-  return  <html lang="es" className={mode}>
+  return  <html lang="es" >
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
           <Header />
